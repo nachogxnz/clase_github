@@ -1,0 +1,523 @@
+@charset "UTF-8";
+/*IMPORTS*/
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box; }
+
+.header {
+  height: 16vh;
+  min-height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8B6220;
+  background-color: #ffffff; }
+
+.div__logo {
+  max-width: 140px;
+  margin-left: 2rem;
+  margin-right: 2rem; }
+
+.menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: center; }
+  .menu__item {
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    transition: all ease 1s; }
+  .menu__item:hover {
+    transform: rotate(20deg); }
+  .menu__item__enlace {
+    padding: 1rem;
+    text-decoration: none;
+    color: #768435;
+    font-family: "Montserrat", sans-serif; }
+  .menu__item__enlace:hover {
+    background-color: #768435;
+    color: white; }
+
+.footer {
+  background-color: #768435;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 15vh; }
+  .footer__enlaces {
+    display: flex;
+    justify-content: left;
+    margin: 1rem; }
+  .footer__copyright {
+    margin-right: 1rem;
+    color: #595959;
+    font-size: 2rem; }
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .header {
+    height: auto;
+    display: flex;
+    flex-direction: column; }
+  .menu {
+    display: block; }
+    .menu__item {
+      margin: 0rem; }
+      .menu__item__enlace {
+        font-size: 1rem;
+        margin: 0.66667rem; }
+  .footer {
+    flex-direction: column;
+    height: auto; }
+    .footer__enlaces {
+      justify-content: center; }
+      .footer__enlaces__img {
+        width: 70%;
+        height: 70%; }
+    .footer__copyright {
+      margin: auto;
+      text-align: center;
+      font-size: 1rem; } }
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .div__logo {
+    width: 100px;
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .menu__item {
+    margin: 0rem; }
+    .menu__item__enlace {
+      font-size: 0.66667rem;
+      margin: 0.66667rem;
+      padding: 5px; }
+  .footer__enlaces__img {
+    width: 70%;
+    height: 70%; }
+  .footer__copyright {
+    font-size: 1rem; } }
+
+.fontSize-1 {
+  font-size: 2rem; }
+
+.fontSize-2 {
+  font-size: 3rem; }
+
+.fontSize-3 {
+  font-size: 4rem; }
+
+.fontSize-4 {
+  font-size: 5rem; }
+
+.fontSize-5 {
+  font-size: 6rem; }
+
+/* HOME */
+#home {
+  display: grid;
+  grid-template-rows: 25vh 1fr 1fr;
+  grid-template-areas: "ceroSeccion"  "primeraSección" "segundaSección";
+  background: linear-gradient(to bottom, #ffffff 0%, #b3c651 78%, #768435 100%); }
+
+.mainzero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  grid-area: ceroSeccion;
+  height: 25vh;
+  background-color: #8B6220;
+  margin-top: 4rem;
+  margin-bottom: 4rem; }
+  .mainzero__titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .mainzero__titles__one {
+      font-size: 3rem;
+      font-family: "Montserrat", sans-serif;
+      color: white; }
+    .mainzero__titles__two {
+      font: 4rem;
+      font-family: "Montserrat", sans-serif;
+      color: white; }
+  .mainzero__img {
+    height: 25vh;
+    width: 25%; }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-area: primeraSección; }
+  .main__heading {
+    color: #8b6220;
+    text-align: center;
+    font-family: 'Rampart One', cursive;
+    clear: both;
+    margin: 3rem auto;
+    font-size: 4rem; }
+  .main__first {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; }
+    .main__first__img {
+      height: 15rem;
+      margin: 4rem;
+      justify-content: space-around; }
+    .main__first__parrafo {
+      text-align: center;
+      width: 25vw;
+      font-family: "Montserrat", sans-serif;
+      color: #2e2e2e;
+      text-shadow: 2px 2px 4px #768435; }
+
+.maindos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: segundaSección;
+  padding: 3rem;
+  margin-top: 4rem; }
+  .maindos__parrafo {
+    text-align: center;
+    width: 25vw;
+    font-family: "Montserrat", sans-serif;
+    color: #2e2e2e;
+    text-shadow: 2px 2px 4px #768435; }
+  .maindos__img {
+    height: 20rem;
+    margin: 4rem;
+    width: 30rem; }
+
+/*NOSOTROS*/
+.nosotros {
+  display: grid;
+  justify-items: center;
+  background: linear-gradient(to bottom, #ffffff 0%, #b3c651 78%, #768435 100%); }
+  .nosotros__img {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .nosotros__img__telas {
+      height: 40vh;
+      border: 1rem;
+      margin-right: 2rem;
+      box-shadow: 10px 10px 8px #434b1e; }
+    .nosotros__img__p {
+      width: 30%;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      color: #2e2e2e;
+      text-shadow: 2px 2px 4px #768435; }
+  .nosotros__titulo {
+    color: #8b6220;
+    text-align: center;
+    font-family: 'Rampart One', cursive;
+    clear: both;
+    margin: 3rem auto;
+    font-size: 4rem; }
+  .nosotros__lista {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    list-style-type: none;
+    margin: 2rem;
+    font-size: 2rem; }
+    .nosotros__lista__item {
+      margin: 2rem;
+      font-family: "Montserrat", sans-serif;
+      color: #2e2e2e;
+      text-shadow: 2px 2px 4px #768435; }
+  .nosotros__tresImagenes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+  .nosotros__tresImagenes img {
+    width: 27vw;
+    height: 30vh;
+    margin: 1rem;
+    box-shadow: 10px 10px 8px #434b1e; }
+  .nosotros__hdos {
+    color: #8b6220;
+    text-align: center;
+    font-family: 'Rampart One', cursive;
+    clear: both;
+    margin: 3rem auto;
+    font-size: 4rem; }
+
+/* GALERÍA */
+#galería {
+  background-image: linear-gradient(to bottom, #ffffff 0%, #b3c651 78%, #768435 100%);
+  height: 80vh; }
+
+.busca__titulo {
+  color: #8b6220;
+  text-align: center;
+  font-family: 'Rampart One', cursive;
+  clear: both;
+  margin: 3rem auto;
+  font-size: 3rem; }
+
+/*MACREANDO*/
+.macreando {
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr 3fr;
+  background-image: linear-gradient(to bottom, #ffffff 0%, #b3c651 78%, #768435 100%); }
+  .macreando__video {
+    display: block;
+    margin: auto;
+    box-shadow: 10px 10px 8px #434b1e; }
+  .macreando__title {
+    color: #8b6220;
+    text-align: center;
+    font-family: 'Rampart One', cursive;
+    clear: both;
+    margin: 3rem auto;
+    font-size: 4rem; }
+  .macreando__titletwo {
+    color: #8b6220;
+    text-align: center;
+    font-family: 'Rampart One', cursive;
+    clear: both;
+    margin: 3rem auto;
+    font-size: 4rem; }
+  .macreando__videotwo {
+    display: block;
+    margin: auto; }
+
+/*PIEDRAS*/
+.energías {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  background-image: linear-gradient(to bottom, #ffffff 0%, #b3c651 78%, #768435 100%);
+  font-family: "Montserrat", sans-serif; }
+  .energías__title {
+    color: #8b6220;
+    text-align: center;
+    font-family: 'Rampart One', cursive;
+    clear: both;
+    margin: 3rem auto;
+    font-size: 4rem; }
+
+.table {
+  border: 3px solid;
+  margin: auto;
+  margin-bottom: 4rem;
+  box-shadow: 10px 10px 8px #434b1e; }
+
+.tr {
+  background-color: #F3F0D7;
+  font-weight: 700;
+  font-size: 1rem; }
+  .tr__th {
+    background-color: #C1AC95;
+    border: 2px;
+    color: #5c5c5c;
+    font-size: 2rem; }
+  .tr__td {
+    background-color: #F3F0D7;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1rem; }
+    .tr__td__ul {
+      list-style-type: square;
+      list-style-position: inside;
+      padding: 1rem; }
+
+/*CONTACTO*/
+.contacto {
+  display: grid;
+  grid-template-rows: 1fr 5fr;
+  background-image: linear-gradient(to bottom, #ffffff 0%, #b3c651 78%, #768435 100%);
+  font-family: "Montserrat", sans-serif; }
+  .contacto__title {
+    color: #8b6220;
+    text-align: center;
+    font-family: 'Rampart One', cursive;
+    clear: both;
+    margin: 3rem auto;
+    font-size: 4rem; }
+
+.form {
+  margin: 3rem auto;
+  font-weight: bold; }
+  .form__label {
+    margin-bottom: 1rem;
+    color: #2e2e2e;
+    text-shadow: 2px 2px 4px #768435; }
+  .form__input {
+    margin-bottom: 1rem;
+    box-shadow: 10px 10px 8px #434b1e; }
+  .form__select {
+    margin-bottom: 1rem;
+    box-shadow: 10px 10px 8px #434b1e; }
+  .form__p {
+    color: #2e2e2e;
+    text-shadow: 2px 2px 4px #768435; }
+
+/*ERROR*/
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem; }
+  .error__title {
+    color: #8b6220;
+    text-align: center;
+    font-family: 'Rampart One', cursive;
+    clear: both;
+    margin: 3rem auto;
+    font-size: 4rem; }
+  .error__img {
+    width: 100vw;
+    height: 70vh; }
+
+.list {
+  list-style-type: none; }
+  .list__button {
+    font-size: 2rem;
+    border: #8B6220 2px;
+    margin-bottom: 1rem; }
+  .list__enlace {
+    text-decoration: none;
+    background-color: #8B6220;
+    color: white;
+    padding: 1rem; }
+  .list__enlace:hover {
+    background-color: white;
+    border: 2px solid #8B6220;
+    color: #8B6220; }
+
+/*MEDIA QUERIES CELULAR */
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  /*HOME*/
+  .main__first {
+    flex-direction: column; }
+    .main__first__img {
+      height: 22vh;
+      width: 22vh;
+      margin: auto;
+      justify-content: center; }
+    .main__first__parrafo {
+      width: 80vw;
+      font-size: 1rem; }
+  .maindos {
+    flex-direction: column; }
+    .maindos__img {
+      height: 25vh;
+      width: 25vh;
+      margin: auto;
+      justify-content: center; }
+    .maindos__parrafo {
+      width: 80vw;
+      font-size: 1rem; }
+  /*NOSOTROS*/
+  .nosotros__hdos {
+    font-size: 2rem; }
+  .nosotros__titulo {
+    font-size: 2rem; }
+  .nosotros__img {
+    flex-direction: column; }
+    .nosotros__img__telas {
+      margin: auto;
+      width: 80%;
+      height: 80%;
+      margin-bottom: 2rem; }
+    .nosotros__img__p {
+      width: 80vw;
+      font-size: 1rem; }
+  .nosotros__lista {
+    display: block;
+    list-style-type: disc; }
+    .nosotros__lista__item {
+      font-size: 1rem; }
+  .nosotros__tresImagenes {
+    flex-direction: column; }
+  .nosotros__tresImagenes img {
+    width: 80%;
+    height: 80%; }
+  /*GALERÍA*/
+  .carouselExampleIndicators {
+    width: 100%;
+    height: 100%; }
+  /*MACREANDO*/
+  .macreando {
+    grid-template-rows: 1fr 2fr 1fr 2fr; }
+    .macreando__video {
+      width: 100vw;
+      height: 30vh; }
+    .macreando__title {
+      font-size: 2rem; }
+    .macreando__titletwo {
+      font-size: 2rem; }
+    .macreando__videotwo {
+      width: 100vw;
+      height: 30vh;
+      margin: auto; }
+  .video__div {
+    height: auto; }
+  /*PIEDRAS*/
+  .energías {
+    grid-template-rows: 1fr 1fr; }
+    .energías__title {
+      font-size: 2rem; }
+  .table {
+    border: 1px solid;
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 100vw; }
+  .tr {
+    font-size: 10px; }
+    .tr__td {
+      font-size: 10px;
+      padding: 5px; }
+      .tr__td__ul {
+        font-size: 10px;
+        padding: 1px; }
+    .tr__th {
+      border: 1px;
+      font-size: 10px; } }
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  /*HOME*/
+  .main__img {
+    height: 25vh;
+    width: 25vw; }
+  .main__parrafo {
+    font-size: 1rem; }
+  .maindos__parrafo {
+    font-size: 1rem; }
+  .maindos__img {
+    height: 25vh;
+    width: 25vw; }
+  /*NOSOTROS*/
+  .nosotros__hdos {
+    font-size: 2rem; }
+  .nosotros__titulo {
+    font-size: 2rem; }
+  .nosotros__img {
+    flex-direction: column; }
+    .nosotros__img__telas {
+      margin: auto;
+      width: 80%;
+      height: 80%;
+      margin-bottom: 2rem; }
+    .nosotros__img__p {
+      width: 80vw;
+      font-size: 1rem; }
+  .nosotros__lista {
+    display: block;
+    list-style-type: disc; }
+    .nosotros__lista__item {
+      font-size: 1rem; }
+  .nosotros__tresImagenes {
+    flex-direction: column; }
+  .nosotros__tresImagenes img {
+    width: 80%;
+    height: 80%; }
+  /*PIEDRAS*/
+  .energías__title {
+    font-size: 3rem; } }
