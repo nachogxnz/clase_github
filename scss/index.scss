@@ -19,7 +19,7 @@
     justify-content: space-between;
     align-items: center;
     grid-area: ceroSeccion;
-    height: 25vh;
+    height: 30vh;
     background-color: $color-primary;
     margin-top: $rem-size+2;
     margin-bottom: $rem-size+2;
@@ -31,15 +31,17 @@
             font-size: $rem-size*1.5;
             font-family: $main-font;
             color: white;
+            @include TextSchadow;
         }
         &__two {
             font: $rem-size+2;
             font-family: $main-font;
             color: white;
+            @include TextShadow;
         }
     }
     &__img {
-        height: 25vh;
+        height: 30vh;
         width: 25%;
     }
 }
