@@ -123,9 +123,8 @@
   justify-content: space-between;
   align-items: center;
   grid-area: ceroSeccion;
-  height: 25vh;
+  height: 30vh;
   background-color: #8B6220;
-  margin-top: 4rem;
   margin-bottom: 4rem; }
   .mainzero__titles {
     display: flex;
@@ -134,13 +133,17 @@
     .mainzero__titles__one {
       font-size: 3rem;
       font-family: "Montserrat", sans-serif;
-      color: white; }
+      color: white;
+      text-shadow: 2px 2px #555555;
+      margin-left: 2rem; }
     .mainzero__titles__two {
       font: 4rem;
       font-family: "Montserrat", sans-serif;
-      color: white; }
+      color: white;
+      text-shadow: 2px 2px #555555;
+      margin-left: 2rem; }
   .mainzero__img {
-    height: 25vh;
+    height: 30vh;
     width: 25%; }
 
 .main {

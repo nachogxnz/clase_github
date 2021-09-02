@@ -21,7 +21,6 @@
     grid-area: ceroSeccion;
     height: 30vh;
     background-color: $color-primary;
-    margin-top: $rem-size+2;
     margin-bottom: $rem-size+2;
     &__titles {
         display: flex;
@@ -31,13 +30,15 @@
             font-size: $rem-size*1.5;
             font-family: $main-font;
             color: white;
-            @include TextSchadow;
+            text-shadow: 2px 2px rgb(85, 85, 85);
+            margin-left: $rem-size;
         }
         &__two {
             font: $rem-size+2;
             font-family: $main-font;
             color: white;
-            @include TextShadow;
+            text-shadow: 2px 2px rgb(85, 85, 85);
+            margin-left: $rem-size;
         }
     }
     &__img {
