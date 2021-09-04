@@ -1,17 +1,20 @@
 .header {
-    height: 16vh;
+    height: 11vh;
     min-height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: $color-primary;
     background-color: #ffffff;
+    position: sticky;
+    top: 0;
 }
 .div {
     &__logo {
         max-width: 140px;
         margin-left: $rem-size;
         margin-right: $rem-size;
+        height: 10vh;
     }
 }
 .menu {
