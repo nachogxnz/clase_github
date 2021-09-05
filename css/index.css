@@ -135,7 +135,7 @@
     justify-content: center; }
     .mainzero__titles__one {
       font-size: 3rem;
-      font-family: "Montserrat", sans-serif;
+      font-family: 'Kaushan Script', cursive;
       color: white;
       text-shadow: 2px 2px #555555;
       margin-left: 2rem; }
@@ -166,12 +166,15 @@
       justify-content: space-around;
       border: 4px solid #8B6220;
       box-shadow: 10px 10px 8px #434b1e; }
-    .main__first__parrafo {
-      text-align: center;
+    .main__first__lista {
       width: 25vw;
       font-family: "Montserrat", sans-serif;
       color: #646363;
-      text-shadow: 2px 2px 4px #768435; }
+      text-shadow: 2px 2px 4px #768435;
+      font-size: 2rem;
+      list-style-image: url(../img/diamond.svg); }
+      .main__first__lista__item {
+        padding: 1rem; }
 
 .maindos {
   display: flex;
@@ -207,7 +210,7 @@
     justify-content: center; }
     .nosotros__div__titulo {
       text-align: center;
-      font-family: 'Rampart One', cursive;
+      font-family: 'Kaushan Script', cursive;
       clear: both;
       margin: 3rem auto;
       font-size: 4rem;
@@ -231,9 +234,10 @@
   .nosotros__titulo {
     color: #8b6220;
     text-align: center;
-    font-family: 'Rampart One', cursive;
+    font-family: 'Kaushan Script', cursive;
     clear: both;
     margin: 3rem auto;
+    text-shadow: 3px 3px 6px #545353;
     font-size: 4rem; }
   .nosotros__lista {
     display: flex;
@@ -260,9 +264,10 @@
   .nosotros__hdos {
     color: #8b6220;
     text-align: center;
-    font-family: 'Rampart One', cursive;
+    font-family: 'Kaushan Script', cursive;
     clear: both;
     margin: 3rem auto;
+    text-shadow: 3px 3px 6px #545353;
     font-size: 4rem; }
 
 /* GALERÍA */
@@ -273,9 +278,10 @@
 .busca__titulo {
   color: #8b6220;
   text-align: center;
-  font-family: 'Rampart One', cursive;
+  font-family: 'Kaushan Script', cursive;
   clear: both;
   margin: 3rem auto;
+  text-shadow: 3px 3px 6px #545353;
   font-size: 3rem; }
 
 /*MACREANDO*/
@@ -290,16 +296,18 @@
   .macreando__title {
     color: #8b6220;
     text-align: center;
-    font-family: 'Rampart One', cursive;
+    font-family: 'Kaushan Script', cursive;
     clear: both;
     margin: 3rem auto;
+    text-shadow: 3px 3px 6px #545353;
     font-size: 4rem; }
   .macreando__titletwo {
     color: #8b6220;
     text-align: center;
-    font-family: 'Rampart One', cursive;
+    font-family: 'Kaushan Script', cursive;
     clear: both;
     margin: 3rem auto;
+    text-shadow: 3px 3px 6px #545353;
     font-size: 4rem; }
   .macreando__videotwo {
     display: block;
@@ -314,9 +322,10 @@
   .energías__title {
     color: #8b6220;
     text-align: center;
-    font-family: 'Rampart One', cursive;
+    font-family: 'Kaushan Script', cursive;
     clear: both;
     margin: 3rem auto;
+    text-shadow: 3px 3px 6px #545353;
     font-size: 4rem; }
 
 .table {
@@ -353,9 +362,10 @@
   .contacto__title {
     color: #8b6220;
     text-align: center;
-    font-family: 'Rampart One', cursive;
+    font-family: 'Kaushan Script', cursive;
     clear: both;
     margin: 3rem auto;
+    text-shadow: 3px 3px 6px #545353;
     font-size: 4rem; }
 
 .form {
@@ -385,9 +395,10 @@
   .error__title {
     color: #8b6220;
     text-align: center;
-    font-family: 'Rampart One', cursive;
+    font-family: 'Kaushan Script', cursive;
     clear: both;
     margin: 3rem auto;
+    text-shadow: 3px 3px 6px #545353;
     font-size: 4rem; }
   .error__img {
     width: 100vw;

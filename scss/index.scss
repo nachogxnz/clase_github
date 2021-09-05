@@ -28,7 +28,7 @@
         justify-content: center;
         &__one {
             font-size: $rem-size*1.5;
-            font-family: $main-font;
+            font-family: 'Kaushan Script', cursive;
             color: white;
             text-shadow: 2px 2px rgb(85, 85, 85);
             margin-left: $rem-size;
@@ -64,11 +64,15 @@
             border: 4px solid $color-primary;
             box-shadow: 10px 10px 8px #434b1e;
         }
-        &__parrafo {
-            text-align: center;
+        &__lista {
             width: 25vw;
             font-family: $main-font;
             @include TextShadow;
+            font-size: $rem-size;
+            list-style-image: url(../img/diamond.svg);
+            &__item {
+                padding: 1rem;
+            }
         }
     }
 }
@@ -107,7 +111,7 @@
         justify-content: center;
         &__titulo {
             text-align: center;
-            font-family: 'Rampart One', cursive;
+            font-family: 'Kaushan Script', cursive;
             clear: both;
             margin: $rem-size+1 auto;
             font-size: $rem-size*2;
