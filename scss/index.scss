@@ -27,10 +27,10 @@
         flex-direction: column;
         justify-content: center;
         &__one {
-            font-size: $rem-size*1.5;
+            font-size: $rem-size*2.5;
             font-family: 'Kaushan Script', cursive;
             color: white;
-            text-shadow: 2px 2px rgb(85, 85, 85);
+            text-shadow: 3px 3px 6px rgb(0, 0, 0);
             margin-left: $rem-size;
         }
         &__two {
@@ -114,8 +114,9 @@
             font-family: 'Kaushan Script', cursive;
             clear: both;
             margin: $rem-size+1 auto;
-            font-size: $rem-size*2;
+            font-size: $rem-size*2.5;
             color: white;
+            text-shadow: 3px 3px 6px black;
         }
     }
     &__img {
@@ -208,41 +209,185 @@
 /*PIEDRAS*/
 .energías {
     display: grid;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
     background-image: $main-gradient;
     font-family: $main-font;
+    gap: 3rem;
+    justify-content: center;
     &__title {
         @include headingStyle;
-        font-size: $rem-size*2;  
+        font-size: $rem-size*2; 
+        grid-column: 2 / 6;
+    }
+    &__amatista {
+        display: flex;
+        align-items: center;
+        position: relative;
+        grid-column: 2 / 3;
+        box-shadow: 3px 3px 6px black;
+    }
+    &__amazonita {
+        display: flex;
+        align-items: center;
+        position: relative;
+        grid-column: 3 / 4;
+        box-shadow: 3px 3px 6px black;
+    }
+    &__cornalina {
+        display: flex;
+        align-items: center;
+        position: relative;
+        grid-column: 4 / 5;
+        box-shadow: 3px 3px 6px black;
+    }
+    &__cuarzo {
+        display: flex;
+        align-items: center;
+        position: relative;
+        grid-column: 5 / 6;
+        box-shadow: 3px 3px 6px black;
+    }
+    &__fluorita {
+        display: flex;
+        align-items: center;
+        position: relative;
+        grid-column: 2 / 3;
+        box-shadow: 3px 3px 6px black;
+    }
+    &__jaspe {
+        display: flex;
+        align-items: center;
+        position: relative;
+        grid-column: 3 / 4;
+        box-shadow: 3px 3px 6px black;
+    }
+    &__labradorita {
+        display: flex;
+        align-items: center;
+        position: relative;
+        grid-column: 4 / 5;
+        box-shadow: 3px 3px 6px black;
+    }
+    &__lapislazuli {
+        display: flex;
+        align-items: center;
+        position: relative;
+        grid-column: 5 / 6;
+        box-shadow: 3px 3px 6px black;
+    }
+    &__malaquita {
+        display: flex;
+        align-items: center;
+        position: relative;
+        grid-column: 2 / 3;
+        box-shadow: 3px 3px 6px black;
+    }
+    &__obsidiana {
+        display: flex;
+        align-items: center;
+        position: relative;
+        grid-column: 3 / 4;
+        box-shadow: 3px 3px 6px black;
+    }
+    &__tigre {
+        display: flex;
+        align-items: center;
+        position: relative;
+        grid-column: 4 / 5;
+        box-shadow: 3px 3px 6px black;
+    }
+    &__onix {
+        display: flex;
+        align-items: center;
+        position: relative;
+        grid-column: 5 / 6;
+        box-shadow: 3px 3px 6px black;
+    }
+    &__luna {
+        display: flex;
+        align-items: center;
+        position: relative;
+        grid-column: 2 / 3;
+        box-shadow: 3px 3px 6px black;
+    }
+    &__sol {
+        display: flex;
+        align-items: center;
+        position: relative;
+        grid-column: 3 / 4;
+        box-shadow: 3px 3px 6px black;
+    }
+    &__pirita {
+        display: flex;
+        align-items: center;
+        position: relative;
+        grid-column: 4 / 5;
+        box-shadow: 3px 3px 6px black;
+    }
+    &__rodocrosita {
+        display: flex;
+        align-items: center;
+        position: relative;
+        grid-column: 5 / 6;
+        box-shadow: 3px 3px 6px black;
+    }
+    &__rodonita {
+        display: flex;
+        align-items: center;
+        position: relative;
+        grid-column: 2 / 3;
+        box-shadow: 3px 3px 6px black;
+    }
+    &__turmalina {
+        display: flex;
+        align-items: center;
+        position: relative;
+        grid-column: 3 / 4;
+        box-shadow: 3px 3px 6px black;
+    }
+    &__turquesa {
+        display: flex;
+        align-items: center;
+        position: relative;
+        grid-column: 4 / 5;
+        box-shadow: 3px 3px 6px black;
+    }
+    &__unakita {
+        display: flex;
+        align-items: center;
+        position: relative;
+        grid-column: 5 / 6;
+        box-shadow: 3px 3px 6px black;
+    }
+    img {
+        width: 100%;
+        height: 100%;
     }
 }
-.table {
-    border: 3px solid;
+.txt {
+    position: absolute;
     margin: auto;
-    margin-bottom: $rem-size*2;
-    box-shadow: 10px 10px 8px #434b1e;
+    opacity: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding: $rem-size;
+    &__list {
+        list-style-position: inside;
+        color: rgb(53, 53, 53);
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 1rem;
+        font-family: 'Kaushan Script', cursive;
+        text-shadow: 2px 2px 4px rgb(75, 75, 75);
+        color: rgb(53, 53, 53);
+    }
 }
-.tr {
-    background-color: #F3F0D7;
-    font-weight: 700;
-    font-size: $rem-size*0.5;
-    &__th {
-        background-color: #C1AC95;
-        border: 2px;
-        color:#5c5c5c;
-        font-size: $rem-size;
-    }
-    &__td {
-        background-color: #F3F0D7;
-        font-weight: 700;
-        font-size: $rem-size*0.5;
-        padding: 1rem;
-        &__ul {
-            list-style-type: square;
-            list-style-position: inside;
-            padding: 1rem;
-        }
-    }
+.txt:hover {
+    opacity: 1;
+    transition: all ease 1s;
 }
 /*CONTACTO*/
 .contacto {
