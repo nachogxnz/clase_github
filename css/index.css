@@ -14,7 +14,8 @@
   background-color: #8B6220;
   background-color: #ffffff;
   position: sticky;
-  top: 0; }
+  top: 0;
+  position: relative; }
 
 .div__logo {
   max-width: 140px;
@@ -134,10 +135,10 @@
     flex-direction: column;
     justify-content: center; }
     .mainzero__titles__one {
-      font-size: 3rem;
+      font-size: 5rem;
       font-family: 'Kaushan Script', cursive;
       color: white;
-      text-shadow: 2px 2px #555555;
+      text-shadow: 3px 3px 6px black;
       margin-left: 2rem; }
     .mainzero__titles__two {
       font: 4rem;
@@ -213,8 +214,9 @@
       font-family: 'Kaushan Script', cursive;
       clear: both;
       margin: 3rem auto;
-      font-size: 4rem;
-      color: white; }
+      font-size: 5rem;
+      color: white;
+      text-shadow: 3px 3px 6px black; }
   .nosotros__img {
     display: flex;
     justify-content: center;
@@ -232,7 +234,11 @@
       color: #646363;
       text-shadow: 2px 2px 4px #768435; }
   .nosotros__titulo {
+<<<<<<< HEAD
     color: #c4892b;
+=======
+    color: #d0912d;
+>>>>>>> text/hover
     text-align: center;
     font-family: 'Kaushan Script', cursive;
     clear: both;
@@ -262,7 +268,11 @@
     margin: 1rem;
     box-shadow: 10px 10px 8px #434b1e; }
   .nosotros__hdos {
+<<<<<<< HEAD
     color: #c4892b;
+=======
+    color: #d0912d;
+>>>>>>> text/hover
     text-align: center;
     font-family: 'Kaushan Script', cursive;
     clear: both;
@@ -276,7 +286,11 @@
   height: 80vh; }
 
 .busca__titulo {
+<<<<<<< HEAD
   color: #c4892b;
+=======
+  color: #d0912d;
+>>>>>>> text/hover
   text-align: center;
   font-family: 'Kaushan Script', cursive;
   clear: both;
@@ -294,7 +308,11 @@
     margin: auto;
     box-shadow: 10px 10px 8px #434b1e; }
   .macreando__title {
+<<<<<<< HEAD
     color: #c4892b;
+=======
+    color: #d0912d;
+>>>>>>> text/hover
     text-align: center;
     font-family: 'Kaushan Script', cursive;
     clear: both;
@@ -302,7 +320,11 @@
     text-shadow: 3px 3px 6px #545353;
     font-size: 4rem; }
   .macreando__titletwo {
+<<<<<<< HEAD
     color: #c4892b;
+=======
+    color: #d0912d;
+>>>>>>> text/hover
     text-align: center;
     font-family: 'Kaushan Script', cursive;
     clear: both;
@@ -316,42 +338,170 @@
 /*PIEDRAS*/
 .energías {
   display: grid;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(6, 1fr);
   background-image: linear-gradient(to bottom, #ffffff 0%, #b3c651 78%, #768435 100%);
-  font-family: "Montserrat", sans-serif; }
+  font-family: "Montserrat", sans-serif;
+  gap: 3rem;
+  justify-content: center; }
   .energías__title {
+<<<<<<< HEAD
     color: #c4892b;
+=======
+    color: #d0912d;
+>>>>>>> text/hover
     text-align: center;
     font-family: 'Kaushan Script', cursive;
     clear: both;
     margin: 3rem auto;
     text-shadow: 3px 3px 6px #545353;
-    font-size: 4rem; }
+    font-size: 4rem;
+    grid-column: 2 / 6; }
+  .energías__amatista {
+    display: flex;
+    align-items: center;
+    position: relative;
+    grid-column: 2 / 3;
+    box-shadow: 3px 3px 6px black; }
+  .energías__amazonita {
+    display: flex;
+    align-items: center;
+    position: relative;
+    grid-column: 3 / 4;
+    box-shadow: 3px 3px 6px black; }
+  .energías__cornalina {
+    display: flex;
+    align-items: center;
+    position: relative;
+    grid-column: 4 / 5;
+    box-shadow: 3px 3px 6px black; }
+  .energías__cuarzo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    grid-column: 5 / 6;
+    box-shadow: 3px 3px 6px black; }
+  .energías__fluorita {
+    display: flex;
+    align-items: center;
+    position: relative;
+    grid-column: 2 / 3;
+    box-shadow: 3px 3px 6px black; }
+  .energías__jaspe {
+    display: flex;
+    align-items: center;
+    position: relative;
+    grid-column: 3 / 4;
+    box-shadow: 3px 3px 6px black; }
+  .energías__labradorita {
+    display: flex;
+    align-items: center;
+    position: relative;
+    grid-column: 4 / 5;
+    box-shadow: 3px 3px 6px black; }
+  .energías__lapislazuli {
+    display: flex;
+    align-items: center;
+    position: relative;
+    grid-column: 5 / 6;
+    box-shadow: 3px 3px 6px black; }
+  .energías__malaquita {
+    display: flex;
+    align-items: center;
+    position: relative;
+    grid-column: 2 / 3;
+    box-shadow: 3px 3px 6px black; }
+  .energías__obsidiana {
+    display: flex;
+    align-items: center;
+    position: relative;
+    grid-column: 3 / 4;
+    box-shadow: 3px 3px 6px black; }
+  .energías__tigre {
+    display: flex;
+    align-items: center;
+    position: relative;
+    grid-column: 4 / 5;
+    box-shadow: 3px 3px 6px black; }
+  .energías__onix {
+    display: flex;
+    align-items: center;
+    position: relative;
+    grid-column: 5 / 6;
+    box-shadow: 3px 3px 6px black; }
+  .energías__luna {
+    display: flex;
+    align-items: center;
+    position: relative;
+    grid-column: 2 / 3;
+    box-shadow: 3px 3px 6px black; }
+  .energías__sol {
+    display: flex;
+    align-items: center;
+    position: relative;
+    grid-column: 3 / 4;
+    box-shadow: 3px 3px 6px black; }
+  .energías__pirita {
+    display: flex;
+    align-items: center;
+    position: relative;
+    grid-column: 4 / 5;
+    box-shadow: 3px 3px 6px black; }
+  .energías__rodocrosita {
+    display: flex;
+    align-items: center;
+    position: relative;
+    grid-column: 5 / 6;
+    box-shadow: 3px 3px 6px black; }
+  .energías__rodonita {
+    display: flex;
+    align-items: center;
+    position: relative;
+    grid-column: 2 / 3;
+    box-shadow: 3px 3px 6px black; }
+  .energías__turmalina {
+    display: flex;
+    align-items: center;
+    position: relative;
+    grid-column: 3 / 4;
+    box-shadow: 3px 3px 6px black; }
+  .energías__turquesa {
+    display: flex;
+    align-items: center;
+    position: relative;
+    grid-column: 4 / 5;
+    box-shadow: 3px 3px 6px black; }
+  .energías__unakita {
+    display: flex;
+    align-items: center;
+    position: relative;
+    grid-column: 5 / 6;
+    box-shadow: 3px 3px 6px black; }
+  .energías img {
+    width: 100%;
+    height: 100%; }
 
-.table {
-  border: 3px solid;
+.txt {
+  position: absolute;
   margin: auto;
-  margin-bottom: 4rem;
-  box-shadow: 10px 10px 8px #434b1e; }
+  opacity: 0;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  padding: 2rem; }
+  .txt__list {
+    list-style-position: inside;
+    color: #353535; }
+  .txt h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-family: 'Kaushan Script', cursive;
+    text-shadow: 2px 2px 4px #4b4b4b;
+    color: #353535; }
 
-.tr {
-  background-color: #F3F0D7;
-  font-weight: 700;
-  font-size: 1rem; }
-  .tr__th {
-    background-color: #C1AC95;
-    border: 2px;
-    color: #5c5c5c;
-    font-size: 2rem; }
-  .tr__td {
-    background-color: #F3F0D7;
-    font-weight: 700;
-    font-size: 1rem;
-    padding: 1rem; }
-    .tr__td__ul {
-      list-style-type: square;
-      list-style-position: inside;
-      padding: 1rem; }
+.txt:hover {
+  opacity: 1;
+  transition: all ease 1s; }
 
 /*CONTACTO*/
 .contacto {
@@ -360,7 +510,11 @@
   background-image: linear-gradient(to bottom, #ffffff 0%, #b3c651 78%, #768435 100%);
   font-family: "Montserrat", sans-serif; }
   .contacto__title {
+<<<<<<< HEAD
     color: #c4892b;
+=======
+    color: #d0912d;
+>>>>>>> text/hover
     text-align: center;
     font-family: 'Kaushan Script', cursive;
     clear: both;
@@ -393,7 +547,11 @@
   align-items: center;
   gap: 2rem; }
   .error__title {
+<<<<<<< HEAD
     color: #c4892b;
+=======
+    color: #d0912d;
+>>>>>>> text/hover
     text-align: center;
     font-family: 'Kaushan Script', cursive;
     clear: both;
