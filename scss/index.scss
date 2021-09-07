@@ -102,18 +102,18 @@
     justify-items: center;
     background: $main-gradient;
     &__div {
-        height: 40vh;
-        width: 50vw;
+        height: 60vh;
+        width: 99vw;
         background-image: url(../img/backpack.png);
         margin: $rem-size*2 auto;
         display: flex;
         position: flex-start;
         justify-content: center;
         &__titulo {
+            align-self: center;
             text-align: center;
             font-family: 'Kaushan Script', cursive;
             clear: both;
-            margin: $rem-size+1 auto;
             font-size: $rem-size*2.5;
             color: white;
             text-shadow: 3px 3px 6px black;
@@ -175,6 +175,7 @@
 #galería {
     background-image:$main-gradient;
     height: 80vh;
+    grid-template-rows: 1fr 2fr;
 }
 .busca{
     &__titulo {
@@ -187,23 +188,34 @@
     display: grid;
     grid-template-rows: 1fr 3fr 1fr 3fr;
     background-image: $main-gradient;
-    &__video {
-        display: block;
-        margin: auto;
-        box-shadow: 10px 10px 8px #434b1e;
-    }
     &__title {
         @include headingStyle;
-        font-size: $rem-size*2;  
+        font-size: $rem-size*2;
+        margin-bottom: $rem-size*2;
     }
     &__titletwo {
         @include headingStyle;
-        font-size: $rem-size*2;  
+        font-size: $rem-size*2;
+        margin-bottom: $rem-size*2;
     }
-    &__videotwo {
-        display: block;
-        margin: auto;
-        }
+}
+.video {
+    margin-top: $rem-size;
+    display: flex;
+    justify-content: space-evenly;
+    video {
+        box-shadow: 3px 3px 6px black;
+        background-color: white;
+    }
+}
+.videotwo {
+    margin-top: $rem-size;
+    display: flex;
+    justify-content: space-evenly;
+    video {
+        box-shadow: 3px 3px 6px black;
+        background-color: white;
+    }
 }
 
 /*PIEDRAS*/
@@ -225,144 +237,125 @@
         align-items: center;
         position: relative;
         grid-column: 2 / 3;
-        box-shadow: 3px 3px 6px black;
     }
     &__amazonita {
         display: flex;
         align-items: center;
         position: relative;
         grid-column: 3 / 4;
-        box-shadow: 3px 3px 6px black;
     }
     &__cornalina {
         display: flex;
         align-items: center;
         position: relative;
         grid-column: 4 / 5;
-        box-shadow: 3px 3px 6px black;
     }
     &__cuarzo {
         display: flex;
         align-items: center;
         position: relative;
         grid-column: 5 / 6;
-        box-shadow: 3px 3px 6px black;
     }
     &__fluorita {
         display: flex;
         align-items: center;
         position: relative;
         grid-column: 2 / 3;
-        box-shadow: 3px 3px 6px black;
     }
     &__jaspe {
         display: flex;
         align-items: center;
         position: relative;
         grid-column: 3 / 4;
-        box-shadow: 3px 3px 6px black;
     }
     &__labradorita {
         display: flex;
         align-items: center;
         position: relative;
         grid-column: 4 / 5;
-        box-shadow: 3px 3px 6px black;
     }
     &__lapislazuli {
         display: flex;
         align-items: center;
         position: relative;
         grid-column: 5 / 6;
-        box-shadow: 3px 3px 6px black;
     }
     &__malaquita {
         display: flex;
         align-items: center;
         position: relative;
         grid-column: 2 / 3;
-        box-shadow: 3px 3px 6px black;
     }
     &__obsidiana {
         display: flex;
         align-items: center;
         position: relative;
         grid-column: 3 / 4;
-        box-shadow: 3px 3px 6px black;
     }
     &__tigre {
         display: flex;
         align-items: center;
         position: relative;
         grid-column: 4 / 5;
-        box-shadow: 3px 3px 6px black;
     }
     &__onix {
         display: flex;
         align-items: center;
         position: relative;
         grid-column: 5 / 6;
-        box-shadow: 3px 3px 6px black;
     }
     &__luna {
         display: flex;
         align-items: center;
         position: relative;
         grid-column: 2 / 3;
-        box-shadow: 3px 3px 6px black;
     }
     &__sol {
         display: flex;
         align-items: center;
         position: relative;
         grid-column: 3 / 4;
-        box-shadow: 3px 3px 6px black;
     }
     &__pirita {
         display: flex;
         align-items: center;
         position: relative;
         grid-column: 4 / 5;
-        box-shadow: 3px 3px 6px black;
     }
     &__rodocrosita {
         display: flex;
         align-items: center;
         position: relative;
         grid-column: 5 / 6;
-        box-shadow: 3px 3px 6px black;
     }
     &__rodonita {
         display: flex;
         align-items: center;
         position: relative;
         grid-column: 2 / 3;
-        box-shadow: 3px 3px 6px black;
     }
     &__turmalina {
         display: flex;
         align-items: center;
         position: relative;
         grid-column: 3 / 4;
-        box-shadow: 3px 3px 6px black;
     }
     &__turquesa {
         display: flex;
         align-items: center;
         position: relative;
         grid-column: 4 / 5;
-        box-shadow: 3px 3px 6px black;
     }
     &__unakita {
         display: flex;
         align-items: center;
         position: relative;
         grid-column: 5 / 6;
-        box-shadow: 3px 3px 6px black;
     }
     img {
-        width: 100%;
-        height: 100%;
+        width: 270px;
+        height: 270px;
+        box-shadow: 3px 3px 6px black;
     }
 }
 .txt {
@@ -376,6 +369,7 @@
     &__list {
         list-style-position: inside;
         color: rgb(53, 53, 53);
+        list-style-image: url(../img/diamond.svg);
     }
     h1 {
         text-align: center;
@@ -457,41 +451,67 @@
 /*MEDIA QUERIES CELULAR */
 @media only screen and (min-width: 320px) and (max-width: 600px) {
     /*HOME*/
+    .mainzero {
+        height: 20vh;
+        margin-top: $rem-size/2;
+        &__titles {
+            &__one {
+                font-size: 1.5rem;
+                text-shadow: 1px 1px 2px rgb(0, 0, 0);
+                margin-left: $rem-size/2;
+            }
+            &__two {
+                margin-left: $rem-size/2;
+                font-size: 1rem;
+            }
+        }
+        &__img {
+            height: 20vh;
+            width: 45%;
+        }
+    }
     .main {
         &__first {
             flex-direction: column;
             &__img {
-                height: 22vh;
-                width: 22vh;
+                height: 30vh;
+                width: 30vh;
                 margin: auto;
                 justify-content: center;
             }
-            &__parrafo {
-                width: 80vw;
-                font-size: $rem-size/2;
+            &__lista {
+                font-size: $rem-size/1.5;
+                margin-top: 1rem;
+                &__item {
+                    padding: 13px;
+                }
             }
         }
     }
     .maindos {
         flex-direction: column;
         &__img {
-            height: 25vh;
-            width: 25vh;
+            height: 30vh;
+            width: 30vh;
             margin: auto;
             justify-content: center;
         }
         &__parrafo {
             width: 80vw;
-            font-size: $rem-size/2;
+            font-size: $rem-size/1.5;
+            margin-bottom: $rem-size;
         }
     }
     /*NOSOTROS*/
     .nosotros {
+        &__div {
+            width: 100vw;
+        }
         &__hdos {
             font-size: 2rem;
         }
         &__titulo {
-            font-size: 2rem;
+            font-size: $rem-size*1.5;
         }
         &__img {
             flex-direction: column;
@@ -510,7 +530,7 @@
             display: block;
             list-style-type: disc;
             &__item {
-                font-size: 1rem;
+                font-size: $rem-size;
             }
         }
         &__tresImagenes {
@@ -522,107 +542,341 @@
         }
     }
     /*GALERÍA*/
-    .carouselExampleIndicators {
-        width: 100%;
-        height: 100%;
-    }
+    .h-25 {
+        width: 75%!important;
+        height: 75%!important;
+    } 
+    
     /*MACREANDO*/
     .macreando {
-        grid-template-rows: 1fr 2fr 1fr 2fr;
-        &__video {
-            width: 100vw;
-            height: 30vh;
-        }
+        grid-template-rows: 1fr 5fr 1fr 5fr;
         &__title {
-            font-size: 2rem;
+            font-size: $rem-size;
+            margin-bottom: $rem-size/4;
         }
         &__titletwo {
-            font-size: 2rem;
-        }
-        &__videotwo {
-            width: 100vw;
-            height: 30vh;
-            margin: auto;
+            font-size: $rem-size;
+            margin-bottom: $rem-size/4;
         }
     }
-    .video__div {
-        height: auto;
+    .video {
+        flex-direction: column;
+        align-items: center;
+        gap: $rem-size;
+        video {
+            width: 80%;
+            height: 70%;
+        }
+    }
+    .videotwo {
+        flex-direction: column;
+        align-items: center;
+        gap: $rem-size;
+        video {
+            width: 80%;
+            height: 70%;
+        }
     }
     /*PIEDRAS*/
     .energías {
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: repeat(11, 1fr);
+        grid-template-columns: 1fr 1fr;
+        gap: 2px;
         &__title {
-            font-size: 2rem;
-        }
-    }
-    .table {
-        border: 1px solid;
-        margin: auto;
-        margin-bottom: $rem-size;
-        width: 100vw;
-    }
-    .tr {
-        font-size: 10px;
-        &__td {
-            font-size: 10px;
-            padding: 5px;
-            &__ul {
-                font-size: 10px;
-                padding: 1px;
+            grid-column: 1 / 3;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            font-size: $rem-size*1.5;
+            img {
+                width: 100px;
+                height: 100px;
             }
         }
-        &__th {
-            border: 1px;
-            font-size: 10px;
+        &__amatista {
+            grid-column: 1 / 2;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 100px;
+                height: 100px;
+            }
         }
+        &__amazonita {
+            grid-column: 2 / 3;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &__cornalina {
+            grid-column: 1 / 2;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &__cuarzo {
+            grid-column: 2 / 3;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &__fluorita {
+            grid-column: 1 / 2;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &__jaspe {
+            grid-column: 2 / 3;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &__labradorita {
+            grid-column: 1 / 2;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &__lapislazuli {
+            grid-column: 2 / 3;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &__malaquita {
+            grid-column: 1 / 2;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &__obsidiana {
+            grid-column: 2 / 3;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &__tigre {
+            grid-column: 1 / 2;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &__onix {
+            grid-column: 2 / 3;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &__luna {
+            grid-column: 1 / 2;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &__sol {
+            grid-column: 2 / 3;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &__pirita {
+            grid-column: 1 / 2;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &__rodocrosita {
+            grid-column: 2 / 3;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &__rodonita {
+            grid-column: 1 / 2;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &__turmalina {
+            grid-column: 2 / 3;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &__turquesa {
+            grid-column: 1 / 2;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &__unakita {
+            grid-column: 2 / 3;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    }
+    .txt {
+        position: inherit;
+        opacity: 1;
+        background-color: transparent;
+        &__list{
+            background-color: transparent;
+        }
+        h1 {
+        }
+    }
+    .txt:hover {
+        opacity: 1;
+        transition: none;
     }
 }
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
     /*HOME*/
-    .main {
-        &__img {
-            height: 25vh;
-            width: 25vw;
+    .mainzero {
+        height: 30vh;
+        margin-top: 1rem;
+        &__titles {
+            &__one {
+                font-size: $rem-size;
+                text-shadow: 1px 1px 2px rgb(0, 0, 0);
+                margin-left: $rem-size/2;
+            }
+            &__two {
+                margin-left: $rem-size/2;
+                font-size: 1rem;
+            }
         }
-        &__parrafo {
-            font-size: $rem-size/2;
+        &__img {
+            height: 30vh;
+            width: 40%;
+        }
+    }
+    .main {
+        &__first {
+            flex-direction: column;
+            &__img {
+                height: 50vh;
+                width: 50vw;
+            }
+            &__lista {
+                font-size: $rem-size;
+            }
         }
     }
     .maindos {
+        flex-direction: column;
         &__parrafo{
-            font-size: $rem-size/2;
+            font-size: $rem-size;
+            width: 90%;
         }
         &__img {
-            height: 25vh;
-            width: 25vw;
+            height: 50vh;
+            width: 50vw;
         }
     }
     /*NOSOTROS*/
     .nosotros {
-        &__hdos {
-            font-size: 2rem;
+        &__div {
+            width: 100vw;
         }
-        &__titulo {
-            font-size: 2rem;
+        &__hdos {
+            font-size: $main-font+1;
         }
         &__img {
             flex-direction: column;
             &__telas {
-                margin:auto;
-                width: 80%;
-                height: 80%;
-                margin-bottom: $rem-size;
+                width: 81%;
+                margin: $rem-size/2 auto;
             }
             &__p {
-                width: 80vw;
-                font-size: 1rem;
+                font-size: $rem-size;
+                width: 90%;
             }
         }
         &__lista {
             display: block;
             list-style-type: disc;
             &__item {
-                font-size: 1rem;
+                font-size: $rem-size;
             }
         }
         &__tresImagenes {
@@ -633,10 +887,264 @@
             height: 80%;
         }
     }
+    /*GALERÍA*/
+    .h-25 {
+        width: 75%!important;
+        height: 75%!important;
+    } 
     /*PIEDRAS*/
     .energías {
+        grid-template-rows: repeat(11, 1fr);
+        grid-template-columns: 1fr 1fr;
+        gap: 2px;
         &__title {
-            font-size: 3rem;
+            grid-column: 1 / 3;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            font-size: $rem-size*1.5;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &__amatista {
+            grid-column: 1 / 2;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &__amazonita {
+            grid-column: 2 / 3;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &__cornalina {
+            grid-column: 1 / 2;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &__cuarzo {
+            grid-column: 2 / 3;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &__fluorita {
+            grid-column: 1 / 2;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &__jaspe {
+            grid-column: 2 / 3;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &__labradorita {
+            grid-column: 1 / 2;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &__lapislazuli {
+            grid-column: 2 / 3;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &__malaquita {
+            grid-column: 1 / 2;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &__obsidiana {
+            grid-column: 2 / 3;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &__tigre {
+            grid-column: 1 / 2;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &__onix {
+            grid-column: 2 / 3;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &__luna {
+            grid-column: 1 / 2;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &__sol {
+            grid-column: 2 / 3;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &__pirita {
+            grid-column: 1 / 2;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &__rodocrosita {
+            grid-column: 2 / 3;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &__rodonita {
+            grid-column: 1 / 2;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &__turmalina {
+            grid-column: 2 / 3;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &__turquesa {
+            grid-column: 1 / 2;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+        &__unakita {
+            grid-column: 2 / 3;
+            position: inherit;
+            flex-direction: column;
+            box-shadow: none;
+            img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+    .txt {
+        position: inherit;
+        opacity: 1;
+        background-color: transparent;
+        &__list{
+            background-color: transparent;
+        }
+        h1 {
+        }
+    }
+    .txt:hover {
+        opacity: 1;
+        transition: none;
+    }
+    /*MACREANDO*/
+    .macreando {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        &__title {
+            font-size: $rem-size*2;
+            margin-bottom: 1rem;
+        }
+        &__titletwo {
+            font-size: $rem-size*2;
+            margin-bottom: 1rem;
+        }
+    }
+    .video {
+        video {
+            width: 30vh;
+            height: 35vh;
+        }
+    }
+    .videotwo {
+        video {
+            width: 30vh;
+            height: 35vh;
         }
     }
 }

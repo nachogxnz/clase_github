@@ -202,18 +202,18 @@
   justify-items: center;
   background: linear-gradient(to bottom, #ffffff 0%, #b3c651 78%, #768435 100%); }
   .nosotros__div {
-    height: 40vh;
-    width: 50vw;
+    height: 60vh;
+    width: 99vw;
     background-image: url(../img/backpack.png);
     margin: 4rem auto;
     display: flex;
     position: flex-start;
     justify-content: center; }
     .nosotros__div__titulo {
+      align-self: center;
       text-align: center;
       font-family: 'Kaushan Script', cursive;
       clear: both;
-      margin: 3rem auto;
       font-size: 5rem;
       color: white;
       text-shadow: 3px 3px 6px black; }
@@ -275,7 +275,8 @@
 /* GALERÍA */
 #galería {
   background-image: linear-gradient(to bottom, #ffffff 0%, #b3c651 78%, #768435 100%);
-  height: 80vh; }
+  height: 80vh;
+  grid-template-rows: 1fr 2fr; }
 
 .busca__titulo {
   color: #d0912d;
@@ -291,10 +292,6 @@
   display: grid;
   grid-template-rows: 1fr 3fr 1fr 3fr;
   background-image: linear-gradient(to bottom, #ffffff 0%, #b3c651 78%, #768435 100%); }
-  .macreando__video {
-    display: block;
-    margin: auto;
-    box-shadow: 10px 10px 8px #434b1e; }
   .macreando__title {
     color: #d0912d;
     text-align: center;
@@ -302,7 +299,8 @@
     clear: both;
     margin: 3rem auto;
     text-shadow: 3px 3px 6px #545353;
-    font-size: 4rem; }
+    font-size: 4rem;
+    margin-bottom: 4rem; }
   .macreando__titletwo {
     color: #d0912d;
     text-align: center;
@@ -310,10 +308,24 @@
     clear: both;
     margin: 3rem auto;
     text-shadow: 3px 3px 6px #545353;
-    font-size: 4rem; }
-  .macreando__videotwo {
-    display: block;
-    margin: auto; }
+    font-size: 4rem;
+    margin-bottom: 4rem; }
+
+.video {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly; }
+  .video video {
+    box-shadow: 3px 3px 6px black;
+    background-color: white; }
+
+.videotwo {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-evenly; }
+  .videotwo video {
+    box-shadow: 3px 3px 6px black;
+    background-color: white; }
 
 /*PIEDRAS*/
 .energías {
@@ -337,125 +349,106 @@
     display: flex;
     align-items: center;
     position: relative;
-    grid-column: 2 / 3;
-    box-shadow: 3px 3px 6px black; }
+    grid-column: 2 / 3; }
   .energías__amazonita {
     display: flex;
     align-items: center;
     position: relative;
-    grid-column: 3 / 4;
-    box-shadow: 3px 3px 6px black; }
+    grid-column: 3 / 4; }
   .energías__cornalina {
     display: flex;
     align-items: center;
     position: relative;
-    grid-column: 4 / 5;
-    box-shadow: 3px 3px 6px black; }
+    grid-column: 4 / 5; }
   .energías__cuarzo {
     display: flex;
     align-items: center;
     position: relative;
-    grid-column: 5 / 6;
-    box-shadow: 3px 3px 6px black; }
+    grid-column: 5 / 6; }
   .energías__fluorita {
     display: flex;
     align-items: center;
     position: relative;
-    grid-column: 2 / 3;
-    box-shadow: 3px 3px 6px black; }
+    grid-column: 2 / 3; }
   .energías__jaspe {
     display: flex;
     align-items: center;
     position: relative;
-    grid-column: 3 / 4;
-    box-shadow: 3px 3px 6px black; }
+    grid-column: 3 / 4; }
   .energías__labradorita {
     display: flex;
     align-items: center;
     position: relative;
-    grid-column: 4 / 5;
-    box-shadow: 3px 3px 6px black; }
+    grid-column: 4 / 5; }
   .energías__lapislazuli {
     display: flex;
     align-items: center;
     position: relative;
-    grid-column: 5 / 6;
-    box-shadow: 3px 3px 6px black; }
+    grid-column: 5 / 6; }
   .energías__malaquita {
     display: flex;
     align-items: center;
     position: relative;
-    grid-column: 2 / 3;
-    box-shadow: 3px 3px 6px black; }
+    grid-column: 2 / 3; }
   .energías__obsidiana {
     display: flex;
     align-items: center;
     position: relative;
-    grid-column: 3 / 4;
-    box-shadow: 3px 3px 6px black; }
+    grid-column: 3 / 4; }
   .energías__tigre {
     display: flex;
     align-items: center;
     position: relative;
-    grid-column: 4 / 5;
-    box-shadow: 3px 3px 6px black; }
+    grid-column: 4 / 5; }
   .energías__onix {
     display: flex;
     align-items: center;
     position: relative;
-    grid-column: 5 / 6;
-    box-shadow: 3px 3px 6px black; }
+    grid-column: 5 / 6; }
   .energías__luna {
     display: flex;
     align-items: center;
     position: relative;
-    grid-column: 2 / 3;
-    box-shadow: 3px 3px 6px black; }
+    grid-column: 2 / 3; }
   .energías__sol {
     display: flex;
     align-items: center;
     position: relative;
-    grid-column: 3 / 4;
-    box-shadow: 3px 3px 6px black; }
+    grid-column: 3 / 4; }
   .energías__pirita {
     display: flex;
     align-items: center;
     position: relative;
-    grid-column: 4 / 5;
-    box-shadow: 3px 3px 6px black; }
+    grid-column: 4 / 5; }
   .energías__rodocrosita {
     display: flex;
     align-items: center;
     position: relative;
-    grid-column: 5 / 6;
-    box-shadow: 3px 3px 6px black; }
+    grid-column: 5 / 6; }
   .energías__rodonita {
     display: flex;
     align-items: center;
     position: relative;
-    grid-column: 2 / 3;
-    box-shadow: 3px 3px 6px black; }
+    grid-column: 2 / 3; }
   .energías__turmalina {
     display: flex;
     align-items: center;
     position: relative;
-    grid-column: 3 / 4;
-    box-shadow: 3px 3px 6px black; }
+    grid-column: 3 / 4; }
   .energías__turquesa {
     display: flex;
     align-items: center;
     position: relative;
-    grid-column: 4 / 5;
-    box-shadow: 3px 3px 6px black; }
+    grid-column: 4 / 5; }
   .energías__unakita {
     display: flex;
     align-items: center;
     position: relative;
-    grid-column: 5 / 6;
-    box-shadow: 3px 3px 6px black; }
+    grid-column: 5 / 6; }
   .energías img {
-    width: 100%;
-    height: 100%; }
+    width: 270px;
+    height: 270px;
+    box-shadow: 3px 3px 6px black; }
 
 .txt {
   position: absolute;
@@ -467,7 +460,8 @@
   padding: 2rem; }
   .txt__list {
     list-style-position: inside;
-    color: #353535; }
+    color: #353535;
+    list-style-image: url(../img/diamond.svg); }
   .txt h1 {
     text-align: center;
     margin-bottom: 1rem;
@@ -549,31 +543,49 @@
 /*MEDIA QUERIES CELULAR */
 @media only screen and (min-width: 320px) and (max-width: 600px) {
   /*HOME*/
+  .mainzero {
+    height: 20vh;
+    margin-top: 1rem; }
+    .mainzero__titles__one {
+      font-size: 1.5rem;
+      text-shadow: 1px 1px 2px black;
+      margin-left: 1rem; }
+    .mainzero__titles__two {
+      margin-left: 1rem;
+      font-size: 1rem; }
+    .mainzero__img {
+      height: 20vh;
+      width: 45%; }
   .main__first {
     flex-direction: column; }
     .main__first__img {
-      height: 22vh;
-      width: 22vh;
+      height: 30vh;
+      width: 30vh;
       margin: auto;
       justify-content: center; }
-    .main__first__parrafo {
-      width: 80vw;
-      font-size: 1rem; }
+    .main__first__lista {
+      font-size: 1.33333rem;
+      margin-top: 1rem; }
+      .main__first__lista__item {
+        padding: 13px; }
   .maindos {
     flex-direction: column; }
     .maindos__img {
-      height: 25vh;
-      width: 25vh;
+      height: 30vh;
+      width: 30vh;
       margin: auto;
       justify-content: center; }
     .maindos__parrafo {
       width: 80vw;
-      font-size: 1rem; }
+      font-size: 1.33333rem;
+      margin-bottom: 2rem; }
   /*NOSOTROS*/
+  .nosotros__div {
+    width: 100vw; }
   .nosotros__hdos {
     font-size: 2rem; }
   .nosotros__titulo {
-    font-size: 2rem; }
+    font-size: 3rem; }
   .nosotros__img {
     flex-direction: column; }
     .nosotros__img__telas {
@@ -588,91 +600,475 @@
     display: block;
     list-style-type: disc; }
     .nosotros__lista__item {
-      font-size: 1rem; }
+      font-size: 2rem; }
   .nosotros__tresImagenes {
     flex-direction: column; }
   .nosotros__tresImagenes img {
     width: 80%;
     height: 80%; }
   /*GALERÍA*/
-  .carouselExampleIndicators {
-    width: 100%;
-    height: 100%; }
+  .h-25 {
+    width: 75% !important;
+    height: 75% !important; }
   /*MACREANDO*/
   .macreando {
-    grid-template-rows: 1fr 2fr 1fr 2fr; }
-    .macreando__video {
-      width: 100vw;
-      height: 30vh; }
+    grid-template-rows: 1fr 5fr 1fr 5fr; }
     .macreando__title {
-      font-size: 2rem; }
+      font-size: 2rem;
+      margin-bottom: 0.5rem; }
     .macreando__titletwo {
-      font-size: 2rem; }
-    .macreando__videotwo {
-      width: 100vw;
-      height: 30vh;
-      margin: auto; }
-  .video__div {
-    height: auto; }
+      font-size: 2rem;
+      margin-bottom: 0.5rem; }
+  .video {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; }
+    .video video {
+      width: 80%;
+      height: 70%; }
+  .videotwo {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem; }
+    .videotwo video {
+      width: 80%;
+      height: 70%; }
   /*PIEDRAS*/
   .energías {
-    grid-template-rows: 1fr 1fr; }
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-columns: 1fr 1fr;
+    gap: 2px; }
     .energías__title {
-      font-size: 2rem; }
-  .table {
-    border: 1px solid;
-    margin: auto;
-    margin-bottom: 2rem;
-    width: 100vw; }
-  .tr {
-    font-size: 10px; }
-    .tr__td {
-      font-size: 10px;
-      padding: 5px; }
-      .tr__td__ul {
-        font-size: 10px;
-        padding: 1px; }
-    .tr__th {
-      border: 1px;
-      font-size: 10px; } }
+      grid-column: 1 / 3;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none;
+      font-size: 3rem; }
+      .energías__title img {
+        width: 100px;
+        height: 100px; }
+    .energías__amatista {
+      grid-column: 1 / 2;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__amatista img {
+        width: 100px;
+        height: 100px; }
+    .energías__amazonita {
+      grid-column: 2 / 3;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__amazonita img {
+        width: 100px;
+        height: 100px; }
+    .energías__cornalina {
+      grid-column: 1 / 2;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__cornalina img {
+        width: 100px;
+        height: 100px; }
+    .energías__cuarzo {
+      grid-column: 2 / 3;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__cuarzo img {
+        width: 100px;
+        height: 100px; }
+    .energías__fluorita {
+      grid-column: 1 / 2;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__fluorita img {
+        width: 100px;
+        height: 100px; }
+    .energías__jaspe {
+      grid-column: 2 / 3;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__jaspe img {
+        width: 100px;
+        height: 100px; }
+    .energías__labradorita {
+      grid-column: 1 / 2;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__labradorita img {
+        width: 100px;
+        height: 100px; }
+    .energías__lapislazuli {
+      grid-column: 2 / 3;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__lapislazuli img {
+        width: 100px;
+        height: 100px; }
+    .energías__malaquita {
+      grid-column: 1 / 2;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__malaquita img {
+        width: 100px;
+        height: 100px; }
+    .energías__obsidiana {
+      grid-column: 2 / 3;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__obsidiana img {
+        width: 100px;
+        height: 100px; }
+    .energías__tigre {
+      grid-column: 1 / 2;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__tigre img {
+        width: 100px;
+        height: 100px; }
+    .energías__onix {
+      grid-column: 2 / 3;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__onix img {
+        width: 100px;
+        height: 100px; }
+    .energías__luna {
+      grid-column: 1 / 2;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__luna img {
+        width: 100px;
+        height: 100px; }
+    .energías__sol {
+      grid-column: 2 / 3;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__sol img {
+        width: 100px;
+        height: 100px; }
+    .energías__pirita {
+      grid-column: 1 / 2;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__pirita img {
+        width: 100px;
+        height: 100px; }
+    .energías__rodocrosita {
+      grid-column: 2 / 3;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__rodocrosita img {
+        width: 100px;
+        height: 100px; }
+    .energías__rodonita {
+      grid-column: 1 / 2;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__rodonita img {
+        width: 100px;
+        height: 100px; }
+    .energías__turmalina {
+      grid-column: 2 / 3;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__turmalina img {
+        width: 100px;
+        height: 100px; }
+    .energías__turquesa {
+      grid-column: 1 / 2;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__turquesa img {
+        width: 100px;
+        height: 100px; }
+    .energías__unakita {
+      grid-column: 2 / 3;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__unakita img {
+        width: 100px;
+        height: 100px; }
+  .txt {
+    position: inherit;
+    opacity: 1;
+    background-color: transparent; }
+    .txt__list {
+      background-color: transparent; }
+  .txt:hover {
+    opacity: 1;
+    transition: none; } }
 
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
   /*HOME*/
-  .main__img {
-    height: 25vh;
-    width: 25vw; }
-  .main__parrafo {
-    font-size: 1rem; }
-  .maindos__parrafo {
-    font-size: 1rem; }
-  .maindos__img {
-    height: 25vh;
-    width: 25vw; }
+  .mainzero {
+    height: 30vh;
+    margin-top: 1rem; }
+    .mainzero__titles__one {
+      font-size: 2rem;
+      text-shadow: 1px 1px 2px black;
+      margin-left: 1rem; }
+    .mainzero__titles__two {
+      margin-left: 1rem;
+      font-size: 1rem; }
+    .mainzero__img {
+      height: 30vh;
+      width: 40%; }
+  .main__first {
+    flex-direction: column; }
+    .main__first__img {
+      height: 50vh;
+      width: 50vw; }
+    .main__first__lista {
+      font-size: 2rem; }
+  .maindos {
+    flex-direction: column; }
+    .maindos__parrafo {
+      font-size: 2rem;
+      width: 90%; }
+    .maindos__img {
+      height: 50vh;
+      width: 50vw; }
   /*NOSOTROS*/
+  .nosotros__div {
+    width: 100vw; }
   .nosotros__hdos {
-    font-size: 2rem; }
-  .nosotros__titulo {
-    font-size: 2rem; }
+    font-size: "Montserrat", sans-serif1; }
   .nosotros__img {
     flex-direction: column; }
     .nosotros__img__telas {
-      margin: auto;
-      width: 80%;
-      height: 80%;
-      margin-bottom: 2rem; }
+      width: 81%;
+      margin: 1rem auto; }
     .nosotros__img__p {
-      width: 80vw;
-      font-size: 1rem; }
+      font-size: 2rem;
+      width: 90%; }
   .nosotros__lista {
     display: block;
     list-style-type: disc; }
     .nosotros__lista__item {
-      font-size: 1rem; }
+      font-size: 2rem; }
   .nosotros__tresImagenes {
     flex-direction: column; }
   .nosotros__tresImagenes img {
     width: 80%;
     height: 80%; }
+  /*GALERÍA*/
+  .h-25 {
+    width: 75% !important;
+    height: 75% !important; }
   /*PIEDRAS*/
-  .energías__title {
-    font-size: 3rem; } }
+  .energías {
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-columns: 1fr 1fr;
+    gap: 2px; }
+    .energías__title {
+      grid-column: 1 / 3;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none;
+      font-size: 3rem; }
+      .energías__title img {
+        width: 200px;
+        height: 200px; }
+    .energías__amatista {
+      grid-column: 1 / 2;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__amatista img {
+        width: 200px;
+        height: 200px; }
+    .energías__amazonita {
+      grid-column: 2 / 3;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__amazonita img {
+        width: 200px;
+        height: 200px; }
+    .energías__cornalina {
+      grid-column: 1 / 2;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__cornalina img {
+        width: 200px;
+        height: 200px; }
+    .energías__cuarzo {
+      grid-column: 2 / 3;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__cuarzo img {
+        width: 200px;
+        height: 200px; }
+    .energías__fluorita {
+      grid-column: 1 / 2;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__fluorita img {
+        width: 200px;
+        height: 200px; }
+    .energías__jaspe {
+      grid-column: 2 / 3;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__jaspe img {
+        width: 200px;
+        height: 200px; }
+    .energías__labradorita {
+      grid-column: 1 / 2;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__labradorita img {
+        width: 200px;
+        height: 200px; }
+    .energías__lapislazuli {
+      grid-column: 2 / 3;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__lapislazuli img {
+        width: 200px;
+        height: 200px; }
+    .energías__malaquita {
+      grid-column: 1 / 2;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__malaquita img {
+        width: 200px;
+        height: 200px; }
+    .energías__obsidiana {
+      grid-column: 2 / 3;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__obsidiana img {
+        width: 200px;
+        height: 200px; }
+    .energías__tigre {
+      grid-column: 1 / 2;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__tigre img {
+        width: 200px;
+        height: 200px; }
+    .energías__onix {
+      grid-column: 2 / 3;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__onix img {
+        width: 200px;
+        height: 200px; }
+    .energías__luna {
+      grid-column: 1 / 2;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__luna img {
+        width: 200px;
+        height: 200px; }
+    .energías__sol {
+      grid-column: 2 / 3;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__sol img {
+        width: 200px;
+        height: 200px; }
+    .energías__pirita {
+      grid-column: 1 / 2;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__pirita img {
+        width: 200px;
+        height: 200px; }
+    .energías__rodocrosita {
+      grid-column: 2 / 3;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__rodocrosita img {
+        width: 200px;
+        height: 200px; }
+    .energías__rodonita {
+      grid-column: 1 / 2;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__rodonita img {
+        width: 200px;
+        height: 200px; }
+    .energías__turmalina {
+      grid-column: 2 / 3;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__turmalina img {
+        width: 200px;
+        height: 200px; }
+    .energías__turquesa {
+      grid-column: 1 / 2;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__turquesa img {
+        width: 200px;
+        height: 200px; }
+    .energías__unakita {
+      grid-column: 2 / 3;
+      position: inherit;
+      flex-direction: column;
+      box-shadow: none; }
+      .energías__unakita img {
+        width: 200px;
+        height: 200px; }
+  .txt {
+    position: inherit;
+    opacity: 1;
+    background-color: transparent; }
+    .txt__list {
+      background-color: transparent; }
+  .txt:hover {
+    opacity: 1;
+    transition: none; }
+  /*MACREANDO*/
+  .macreando {
+    grid-template-rows: 1fr 1fr 1fr 1fr; }
+    .macreando__title {
+      font-size: 4rem;
+      margin-bottom: 1rem; }
+    .macreando__titletwo {
+      font-size: 4rem;
+      margin-bottom: 1rem; }
+  .video video {
+    width: 30vh;
+    height: 35vh; }
+  .videotwo video {
+    width: 30vh;
+    height: 35vh; } }
