@@ -42,21 +42,62 @@
     }
 }
 .footer {
-    background-color: #768435;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 15vh;
+    background-color:#768435;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
     &__enlaces {
         display: flex;
-        justify-content: left;
-        margin: $rem-size/2;
+        justify-content: center;
+        margin: 0px $rem-size/2;
+        img {
+            height: 3vh;
+            margin: 12px $rem-size/2;
+        }
+    }
+    &__nav {
+        display: inherit;
+        ul {
+            list-style-type: none;
+            display: inline;
+            display: flex;
+            justify-content: center;
+            margin: 10px $rem-size/1.5;
+        }
+        li {
+            padding: 0 $rem-size;
+            a {
+                text-decoration: none;
+                color: rgb(160, 160, 160);
+                font-size: $rem-size/2;
+                text-shadow: 2px 2px 4px #41491d;
+                font-family: $main-font;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
     }
     &__copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0;
+        .texto {
         margin-right:$rem-size/2;
         color: #595959;
-        font-size: $rem-size;
+        font-size: $rem-size/2;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        }
+        .logo {
+            display: inline-block;
+            img {
+                height: $rem-size*1;
+                margin-right: $rem-size
+            }
+        }
     }
 }
 @media only screen and (min-width: 320px) and (max-width: 600px) {
@@ -76,19 +117,9 @@
         }
     }
     .footer {
-        flex-direction: column;
-        height: auto;
-        &__enlaces {
-            justify-content: center;
-            &__img {
-                width: 70%;
-                height: 70%;
-            }
-        }
-        &__copyright {
-            margin: auto;
-            text-align: center;
-            font-size: 1rem;
+        grid-template-rows: 1fr 1fr;
+        &__nav {
+            display: none;
         }
     }
 }
@@ -111,14 +142,9 @@
         }
     }
     .footer {
-        &__enlaces {
-            &__img {
-                width: 70%;
-                height: 70%;
-            }
-        }
-        &__copyright {
-            font-size: $rem-size/2;
+        grid-template-rows: 1fr 1fr;
+        &__nav {
+            display: none;
         }
     }
 }

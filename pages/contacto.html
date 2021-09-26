@@ -34,63 +34,86 @@
         </nav>
     </header>
     <section class="contacto">
-        <h1 class="contacto__title">Hacé tu consulta!</h1>
-        <form class="form" action="" method="post" enctype="">
-            <label class="form__label" for="nombre">Nombre</label>
-            <input class="form__input" type="text" name="nombre">
-            <br>
-            <label class="form__label" for="apellido">Apellido</label>
-            <input class="form__input" type="text" name="apellido">
-            <br>
-            <label class="form__label" for="email">E-mail</label>
-            <input class="form__input" type="email" name="email" placeholder="ejemplo@hotmail.com">
-            <br>
-            <select class="form__select" name="Provincia">
-                <option value="CABA">CABA</option>
-                <option value="Buenos Aires (Provincia)">Buenos Aires (Provincia)</option>
-                <option value="Catamarca">Catamarca</option>
-                <option value="Chaco">Chaco</option>
-                <option value="Chubut">Chubut</option>
-                <option value="Córdoba">Córdoba</option>
-                <option value="Corrientes">Corrientes</option>
-                <option value="Entre Ríos">Entre Ríos</option>
-                <option value="Formosa">Formosa</option>
-                <option value="Jujuy">Jujuy</option>
-                <option value="La Pampa">La Pampa</option>
-                <option value="La Rioja">La Rioja</option>
-                <option value="Mendoza">Mendoza</option>
-                <option value="Misiones">Misiones</option>
-                <option value="Neuquén">Neuquén</option>
-                <option value="Río Negro">Río Negro</option>
-                <option value="Satlta">Salta</option>
-                <option value="San Juan">San Juan</option>
-                <option value="San Luis">San Luis</option>
-                <option value="Santa Cruz">Santa Cruz</option>
-                <option value="Santa Fe">Santa Fe</option>
-                <option value="Santiago del Estero">Santiago del Estero</option>
-                <option value="Tierra del Fuego">Tierra del Fuego</option>
-                <option value="Tucumán">Tucumán</option>
-            </select>
-            <p class="form__p">Acepto recibir información publicitaria a mi correo electrónico
-            <input class="form__input" type="checkbox" name="acepto" value="1"></p>
-            <label class="form__label" for="comment">Dejános tu consulta:</label>
-            <br>
-            <textarea name="comment" cols="40" rows="20" placeholder="Escribí acá tu consulta o comentario"></textarea>
-            <input class="form__input" type="submit" value="Enviar formulario">
-            <input class="form__input" type="reset" value="Resetear formulario">
-        </form>
+        <div class="contacto__content">
+            <h1>Hacé tu consulta!</h1>
+            <img src="../img/contact.svg" alt="Ilustración contacto">
+        </div>
+        <div class="contacto__form">
+            <form class="form" action="" method="post" enctype="">
+                <label class="form__label" for="nombre">Nombre</label>
+                <input class="form__input" type="text" name="nombre">
+                <br>
+                <label class="form__label" for="apellido">Apellido</label>
+                <input class="form__input" type="text" name="apellido">
+                <br>
+                <label class="form__label" for="email">E-mail</label>
+                <input class="form__input" type="email" name="email" placeholder="ejemplo@hotmail.com">
+                <br>
+                <select class="form__select" name="Provincia">
+                    <option value="CABA">CABA</option>
+                    <option value="Buenos Aires (Provincia)">Buenos Aires (Provincia)</option>
+                    <option value="Catamarca">Catamarca</option>
+                    <option value="Chaco">Chaco</option>
+                    <option value="Chubut">Chubut</option>
+                    <option value="Córdoba">Córdoba</option>
+                    <option value="Corrientes">Corrientes</option>
+                    <option value="Entre Ríos">Entre Ríos</option>
+                    <option value="Formosa">Formosa</option>
+                    <option value="Jujuy">Jujuy</option>
+                    <option value="La Pampa">La Pampa</option>
+                    <option value="La Rioja">La Rioja</option>
+                    <option value="Mendoza">Mendoza</option>
+                    <option value="Misiones">Misiones</option>
+                    <option value="Neuquén">Neuquén</option>
+                    <option value="Río Negro">Río Negro</option>
+                    <option value="Satlta">Salta</option>
+                    <option value="San Juan">San Juan</option>
+                    <option value="San Luis">San Luis</option>
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="Santa Fe">Santa Fe</option>
+                    <option value="Santiago del Estero">Santiago del Estero</option>
+                    <option value="Tierra del Fuego">Tierra del Fuego</option>
+                    <option value="Tucumán">Tucumán</option>
+                </select>
+                <p class="form__p">Acepto recibir información publicitaria a mi correo electrónico
+                <input class="form__input" type="checkbox" name="acepto" value="1"></p>
+                <label class="form__label" for="comment">Dejános tu consulta:</label>
+                <br>
+                <textarea name="comment" cols="40" rows="20" placeholder="Escribí acá tu consulta o comentario"></textarea>
+                <input class="form__input" type="submit" value="Enviar formulario">
+                <input class="form__input" type="reset" value="Resetear formulario">
+            </form>
+        </div>
     </section>
     <footer class="footer">
         <div class="footer__enlaces">
             <a href="https://www.facebook.com/macreartejoyeria" target="_blank">
                 <img class="footer__enlaces__img" src="../img/Facebook.svg" alt="Logo Facebook">
             </a>
-            <a href="https://www.instagram.com/macreartejoyeria/">
-                <img class="footer__enlaces__img" src="../img/Instagram.svg" alt="Logo Instagram">
+            <a href="https://www.instagram.com/macreartejoyeria/" target="_blank">
+                <img class="footer__enlaces__img" src="../img/instagram.svg" alt="Logo Instagram">
+            </a>
+            <a href="https://vm.tiktok.com/ZMRQhYW41/" target="_blank">
+                <img src="../img/tiktok.svg" alt="enlace tiktok">
             </a>
         </div>
+        <div class="footer__nav">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="macreando.html">Macreando</a></li>
+                <li><a href="piedras.html">Piedras</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
         <div class="footer__copyright">
-            <p>Todos los derechos reservados</p>
+            <div class="texto">
+                <p>Todos los derechos reservados</p>
+            </div>
+            <div class="logo">
+                <img src="../img/IGGON.png" alt="Logo empresa">
+            </div>
         </div>
     </footer>
 </body>

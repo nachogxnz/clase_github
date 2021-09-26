@@ -386,20 +386,38 @@
 /*CONTACTO*/
 .contacto {
     display: grid;
-    grid-template-rows: 1fr 5fr;
+    grid-template-columns: 1.5fr 1fr;
     background-image: $main-gradient;
     font-family: $main-font;
-    &__title {
-        @include headingStyle;
-        font-size: $rem-size*2;  
+    height: 100vh;
+    &__content {
+        justify-content: center;
+        margin: auto;
+        height: 70vh;
+        h1 {
+            @include headingStyle;
+            font-size: $rem-size*2;
+            margin: 0 auto;
+        }
+        img {
+            width: 40vw;
+        }  
+    }
+    &__form {
+        justify-self: start;
+        align-self: center;
+        height: 70vh;
     }
 }
 .form {
-    margin: $rem-size+1 auto;
+    margin: auto;
     font-weight: bold;
+    justify-self: start;
     &__label {
         margin-bottom: 1rem;
         @include TextShadow;
+        font-family: $main-font;
+        color: $color-primary;
     }
     &__input {
         margin-bottom: 1rem;
@@ -411,6 +429,7 @@
     }
     &__p {
         @include TextShadow;
+        color: $color-primary;
     }
 }
 /*ERROR*/
@@ -801,12 +820,29 @@
         &__list{
             background-color: transparent;
         }
-        h1 {
-        }
     }
     .txt:hover {
         opacity: 1;
         transition: none;
+    }
+    /*CONTACTO*/
+    .contacto {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        height: inherit;
+        &__content {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            h1 {
+                margin: 1rem;
+            }
+            img {
+                width: 70vw;
+                margin: auto;
+            }  
+        }
     }
 }
 @media only screen and (min-width: 600px) and (max-width: 1024px) {
@@ -1116,8 +1152,6 @@
         &__list{
             background-color: transparent;
         }
-        h1 {
-        }
     }
     .txt:hover {
         opacity: 1;
@@ -1145,6 +1179,25 @@
         video {
             width: 30vh;
             height: 35vh;
+        }
+    }
+    /*CONTACTO*/
+    .contacto {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        height: inherit;
+        &__content {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            h1 {
+                margin: 1rem;
+            }
+            img {
+                width: 70vw;
+                margin: auto;
+            }  
         }
     }
 }
